@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafetería El Aroma</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Cafetería El Aroma</h1>
+        <p>¡Disfruta del mejor café en un ambiente acogedor!</p>
+    </header>
+
+    <section>
+        <h2>Nuestro Menú</h2>
+        <div class="menu-item">
+            <h3>Café Americano</h3>
+            <p>El clásico café americano, fuerte y delicioso.</p>
+        </div>
+        <div class="menu-item">
+            <h3>Latte Caramelado</h3>
+            <p>Latte suave con un toque de caramelo.</p>
+        </div>
+        <!-- Agrega más elementos de menú según sea necesario -->
+    </section>
+
+    <section>
+        <h2>Nuestro Local</h2>
+        <p>Visítanos en nuestra ubicación:</p>
+        <address>
+            Dirección de la Cafetería El Aroma<br>
+            Ciudad, País
+        </address>
+        <!-- Puedes agregar más detalles sobre el local, como horario de atención, etc. -->
+    </section>
+
+    <section class="gallery">
+        <h2>Galería</h2>
+        <img src="imagen1.jpg" alt="Interior de la cafetería">
+        <img src="imagen2.jpg" alt="Variedad de cafés">
+        <!-- Agrega más imágenes de la galería según sea necesario -->
+    </section>
+
+    <section>
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta? Contáctanos.</p>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cafetería El Aroma. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
