@@ -1,0 +1,68 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.app-container {
+    background-color: #679ed5;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    padding: 100px;
+    text-align: center;
+}
+
+h1 {
+    color: #000000;
+}
+
+#textSection {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#addTextButton {
+    background-color: #9ef387;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#addTextButton:hover {
+    background-color: #0c9738;
+}
+
+#imageSection {
+    margin-top: 100px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-paragraph {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}

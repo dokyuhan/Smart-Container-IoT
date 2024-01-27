@@ -1,1 +1,6 @@
+#pip install -r requirements.txt (es para descargar todos las librerias mencionadas en el documento txt)
 Flask==2.3.2
+twilio
+mysql.connector
+matplotlib
+pybase64

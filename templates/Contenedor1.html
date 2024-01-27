@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofGJopfM5K9FOd8GCExl5qD2J1ZhFf0ktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contenedor_1.css') }}">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>Contenedor 1</h1>
+
+        <div id="appContainer">
+            <!-- Text Section -->
+            <div id="textSection">
+                <textarea id="textInput" placeholder="Type your text here..."></textarea>
+                <button id="addTextButton" onclick="addText()">Add Text</button>
+            </div>
+            <!-- Image Section -->
+            <div id="imageSection">
+                <img class="grafica-imagen" src="data:image/png;base64, {{ img_data2 }}" alt="Gráfica de Pie" style="width: 500px; height: 500px;" />
+            </div>
+
+        </div>
+
+        <script>
+            function addText() {
+                var textInput = document.getElementById('textInput');
+                var textSection = document.getElementById('textSection');
+                
+                // Create a new paragraph element
+                var newText = document.createElement('p');
+                newText.textContent = textInput.value;
+                newText.className = 'text-paragraph';
+                
+                // Insert the new paragraph at the beginning of the textSection
+                textSection.insertBefore(newText, textSection.firstChild);
+                
+                // Clear the text input
+                textInput.value = '';
+            }
+        </script>
+
+    </div>
+
+</body>
+</html>

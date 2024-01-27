@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofGJopfM5K9FOd8GCExl5qD2J1ZhFf0ktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1 class="fade-in">Smart Container</h1>
+
+        <ul id="menu">
+            <li><a href="{{ url_for('contenedor_1') }}" class="button"><i class="fas fa-info-circle app-icon"></i> Contenedor 1<br></a></li>
+            <li><a href="pagina2.html" class="button"><i class="fas fa-info-circle app-icon"></i> Contenedor 2</a></li>
+            <li><a href="pagina3.html" class="button"><i class="fas fa-info-circle app-icon"></i> Contenedor 3</a></li>
+            <li><a href="pagina4.html" class="button"><i class="fas fa-info-circle app-icon"></i> Contenedor 4</a></li>
+            <li><a href="{{ url_for('agregar') }}" class="button"><i class="fas fa-info-circle app-icon"></i> Agregar + </a></li>
+        </ul>
+    </div>
+  
+</body>
+</html>
